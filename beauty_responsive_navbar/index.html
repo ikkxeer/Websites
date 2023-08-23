@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty Responsive navbar</title>
+<link rel="stylesheet" href="styles/style.css">
+<script src="https://kit.fontawesome.com/c0c91f29c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">FlyWhere</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">First page</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars fa-xl"></i>
+    </nav>
+    <header></header>
+    <section class="fav">
+        <div class="container">
+            <img class="img" src="img\pico-nevado.jpg" alt="">
+            <div class="text">
+                <p class="title">SERENORA ISLAND</p>
+                <p>At the heart of the vast ocean lies the mysterious Serenora Island, a haven of natural beauty and unexplored wonder. This hidden gem in the middle of crystal clear waters is a place where fantasy meets reality at every turn. With its lush vegetation, white-sand beaches, and mountainous landscapes, Isla Serenora is a testament to nature's artistic splendor.</p> <br>
+                <p>The island is surrounded by coral reefs that form a protective shield against the waves of the ocean, creating a lagoon of calm waters and turquoise tones that welcome visitors with their serene embrace. Tropical forests stretch inland, with tall trees that seem to touch the sky and a diversity of flora and fauna that intertwine in a delicate balance.</p> <br>
+                <p>In the center of the island, the Pico del Horizonte rises majestically, a mountain whose top is lost in the clouds. Brave explorers who venture up its steep trails are rewarded with panoramic views that stretch from the shimmering lagoon to sprawling forests and beyond to the endless ocean that meets the sky.</p> <br>
+                <p>The locals of Isla Serenora are known for their warmth and hospitality. Its picturesque villages are scattered along the coast and inland, where life flows to the calm rhythm of the waves and the songs of tropical birds. The stories and legends of the island are passed down from generation to generation, enriching the local culture with a sense of mystery and wonder.</p> <br>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script>
+    const Menu = document.querySelector("i.fa-solid.fa-bars")
+    const navLinks = document.querySelector(".nav-links")
+
+    Menu.addEventListener('click', ()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
